@@ -1,0 +1,88 @@
+.post {
+
+    &__description {
+        margin-top: 30px;
+    }
+
+    &__title {
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 12px;
+    }
+
+    &__date {
+        font-size: 15px;
+        line-height: 17px;
+        color: #2A2A2A;
+    }
+
+    &__photo {
+        display: block;
+        width: 500px;
+        height: 200px;
+        margin: 0 auto;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        box-shadow: 5px -5px #2A2A2A;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: justify
+    }
+
+    &__items {
+        display: flex;
+        gap: 22px;
+    }
+
+    &__more {
+        margin-top: 30px;
+
+        &-title {
+            font-size: 22px;
+            line-height: 26px;
+            margin-bottom: 23px;
+        }
+
+        &-item {
+            height: 350px;
+            width: 544px;
+            background: url('./../../assets/calculator.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            border-radius: 9px;
+            transition: all 500ms ease;
+
+            &:hover {
+                box-shadow: 7px 7px #2A2A2A;
+            }
+        }
+
+        &-content {
+            background: rgba($color: #2A2A2A, $alpha: .7);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 24px;
+            overflow: hidden;
+            word-wrap: none;
+            border-radius: 0 0 9px 9px;
+
+            h6 {
+                font-size: 19px;
+                line-height: 22px;
+                color: rgb(81, 76, 228);
+            }
+
+            p {
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.delivery {
+    margin-top: 20px;
+
+    &__switch {
+        height: 60px;
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(181, 181, 181);
+        border-radius: 9px;
+        overflow: hidden;
+        margin-bottom: 50px;
+
+        &-del {
+            display: block;
+            background: rgb(228, 228, 228);
+            height: 100%;
+            line-height: 52px;
+            width: 100%;
+            border-right: 1px solid rgb(181, 181, 181);
+            text-align: center;
+            color: #000;
+            font-weight: 700;
+        }
+
+        &-pay {
+            display: block;
+            color: #000;
+            font-weight: 700;
+            line-height: 52px;
+            height: 100%;
+            background: #fff;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-size: 25px;
+        line-height: 22px;
+    }
+
+    &__content {
+        margin-top: 40px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        position: relative;
+        padding-left: 50px;
+
+        &-del {
+            &::before {
+                content: '';
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: url('./../../assets/transit.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top center;
+            }
+        }
+
+        &-pay {
+            &::before {
+                content: '';
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: url('./../../assets/pickup-point.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top center;
+            }
+        }
+
+    }
+
+    &__subtitle+&__subtitle {
+        &::before {
+            content: '';
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url('./../../assets/pickup-point.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+    }
+
+    &__text {
+        margin-top: 20px;
+    }
+}
+
+.payment {
+    &__info {
+        display: none;
+    }
+
+    &__title {
+        font-size: 25px;
+        line-height: 22px;
+    }
+
+    &__content {
+        margin-top: 40px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        //         position: relative;
+        //         padding-left: 50px;
+    }
+}

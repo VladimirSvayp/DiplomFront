@@ -1,0 +1,135 @@
+.header {
+    &__top {
+        height: 82px;
+        padding-top: 20px;
+        background-color: #2A2A2A;
+    }
+
+    &__nav {
+        background: #fff;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__search {
+        position: relative;
+        margin-right: 50px;
+
+        & input {
+            min-width: 475px;
+            height: 38px;
+            border-radius: 9px;
+            border: none;
+            padding: 15px 13px;
+            font-size: 12px;
+            line-height: 14px;
+            color: #929292;
+
+            @media (max-width: 570px) {
+                min-width: 375px;
+            }
+
+            @media (max-width: 470px) {
+                min-width: 275px;
+            }
+
+            @media (max-width: 370px) {
+                min-width: 200px;
+            }
+        }
+
+        & button {
+            height: 20px;
+            width: 20px;
+            background: url(../../../assets/search.svg);
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            right: 11px;
+            top: 20%;
+        }
+
+        @media (max-width: 1180px) {
+            margin-right: 0;
+        }
+
+
+    }
+
+    &__phone {
+        // margin-right: 32px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #fff;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: url(../../../assets/phone.svg);
+            height: 26px;
+            width: 26px;
+            left: -36px;
+        }
+
+        @media (max-width: 1180px) {
+            display: none;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 700px) {
+            display: none;
+        }
+    }
+}
+
+.logo {
+    max-width: 157px;
+    max-height: 37px;
+
+    @media (max-width: 860px) {
+        display: none;
+    }
+}
+
+.burger {
+
+    &_menu {
+        height: 100vh;
+        width: 100vw;
+        background-color: #000;
+        position: fixed;
+        top: 0;
+        right: -3000px;
+        z-index: 3;
+        opacity: 0;
+        transition: all 500ms ease-out;
+
+        &.active {
+            right: 0;
+            opacity: 1;
+        }
+    }
+
+    &__btn {
+        display: none;
+        border: none;
+        background: none;
+        color: #fff;
+        cursor: pointer;
+
+        @media (max-width: 700px) {
+            display: block;
+        }
+    }
+}

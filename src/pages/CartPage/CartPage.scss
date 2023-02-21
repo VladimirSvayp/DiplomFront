@@ -1,0 +1,131 @@
+.cart {
+    &__title {
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 700;
+        margin-top: 51px;
+        margin-bottom: 21px;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &-name {
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: 700;
+            width: 240px;
+            margin-right: 89px;
+        }
+    }
+
+    &__img {
+        height: 95px;
+        width: 95px;
+        margin-right: 33px;
+    }
+
+    &__price {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        margin-right: 57px;
+    }
+
+    &__amount {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        margin-right: 60px;
+        position: relative;
+
+        &::before {
+            content: '-';
+            position: absolute;
+            left: -20px;
+        }
+
+        &::after {
+            content: '+';
+            position: absolute;
+            right: -20px;
+        }
+    }
+
+    &__del {
+        height: 30px;
+        width: 30px;
+        background: url(../../assets/delete.svg);
+    }
+
+    &__info {
+        margin-left: auto;
+        width: 350px;
+        height: 244px;
+        background: #fff;
+        border-radius: 9px;
+        box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+        padding: 36px 35px 57px 24px;
+
+    }
+
+    &__cost {
+        font-size: 19px;
+        line-height: 22px;
+        font-weight: 700;
+        margin-bottom: 18px;
+
+        span {
+            font-size: 39px;
+            line-height: 33px;
+            font-weight: 700;
+        }
+    }
+
+    &__promocode {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 7px;
+    }
+
+    &__form {
+        position: relative;
+
+        input {
+            margin-bottom: 23px;
+            border-radius: 9px;
+            border: 1px solid rgba(42, 42, 42, 0.25);
+            width: 285px;
+            padding: 8px 45px 8px 12px;
+        }
+
+        button {
+            height: 34px;
+            width: 34px;
+            border: none;
+            background: url(../../assets/promocheck.svg);
+            position: absolute;
+            right: 5px;
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+        padding: 12px 85px;
+        background: #3B75B6;
+        border-radius: 9px;
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 700;
+        color: #fff;
+    }
+}

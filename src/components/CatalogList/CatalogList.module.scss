@@ -1,0 +1,17 @@
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 255px);
+    column-gap: 30px;
+    row-gap: 30px;
+
+    @media (max-width: 870px) {
+        grid-template-columns: repeat(2, 255px);
+        width: 540px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 590px) {
+        grid-template-columns: 255px;
+        width: 255px;
+    }
+}

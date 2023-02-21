@@ -1,0 +1,70 @@
+.swiper {
+    height: 320px;
+    margin-bottom: 45px;
+
+    &__item {
+        height: 320px;
+        width: 960px;
+        align-items: center;
+        background: url(../../assets/slider-slide.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        position: relative;
+    }
+
+    &__content {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 28px;
+        line-height: 33px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 40px;
+    }
+
+    &__btn {
+        padding: 7px 30px;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        background: #3B75B6;
+        border-radius: 9px;
+    }
+
+    // &-button-next::after {
+    //     content: '';
+    //     width: 25px;
+    //     height: 25px;
+    //     background: url(../../assets/nextArr.svg);
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     background-position: top center;
+    // }
+
+    // &-button-prev::after {
+    //     content: '';
+    //     width: 25px;
+    //     height: 25px;
+    //     background: url(../../assets/prevArr.svg);
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     background-position: top center;
+    // }
+
+    // &-pagination-bullet {
+    //     background-color: rgb(192, 207, 250);
+    // }
+}

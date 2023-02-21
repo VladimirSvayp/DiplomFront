@@ -1,0 +1,135 @@
+.profile {
+
+    &__inner {
+        margin-top: 50px;
+        display: flex;
+        gap: 125px;
+    }
+
+    &__sidebar {
+        max-height: 240px;
+        max-width: 255px;
+        background: #fff;
+        border-radius: 9px;
+        box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 29px 92px 46px 39px;
+
+        &-item {
+            color: #2A2A2A;
+            font-size: 19px;
+            line-height: 40px;
+            font-weight: 700;
+        }
+
+        &-active {
+            color: rgb(24, 101, 255);
+            font-size: 22px;
+            line-height: 46px;
+        }
+    }
+
+    &__main {
+        width: 500px;
+    }
+
+    &__avatar {
+        height: 130px;
+        width: 130px;
+        position: relative;
+        display: block;
+
+        & img {
+            height: 100%;
+            width: 100%;
+        }
+
+    }
+
+    &__name {        
+        margin-top: 20px;
+        margin-bottom: 22px;
+
+        & p {
+            font-size: 22px;
+            line-height: 44px;
+            font-weight: 700;
+        }
+
+    }
+
+    &__phone {
+        margin-bottom: 22px;
+
+        & p {
+            font-size: 19px;
+            line-height: 38px;
+            font-weight: 700;
+        }
+
+        & span {
+            font-size: 19px;
+            line-height: 38px;
+            font-weight: 400;
+        }
+    }
+
+    &__email {
+
+        & p {
+            font-size: 19px;
+            line-height: 38px;
+            font-weight: 700;
+        }
+
+        & span {
+            font-size: 19px;
+            line-height: 38px;
+            font-weight: 400;
+        }
+    }
+
+    &__edit {
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 32px;
+        position: relative;
+        color: #000000;
+        transition: all 500ms ease;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &::before {
+            content: '';
+            width: 19px;
+            height: 19px;
+            background: url('./../../assets/fluent_calendar-edit.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: -28px;
+            top: 5px;
+        }
+    }
+
+    &__exit {
+        margin-top: 50px;
+        text-transform: uppercase;
+        font-weight: 700;
+        border: 1px solid rgb(198, 14, 14);
+        border-radius: 9px;
+        width: 100px;
+        padding: 10px 15px;
+        text-align: center;
+        transition: all 500ms ease;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(255, 113, 113);
+        }
+    }
+}

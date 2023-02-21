@@ -1,0 +1,114 @@
+.footer {
+    height: 300px;
+    margin-top: 50px;
+    // background: linear-gradient(to right, rgba(215, 231, 245, 1) 0%, rgba(215, 231, 245, 1) 26%, rgba(81, 153, 233, 1) 67%, rgba(32, 124, 229, 1) 82%);
+    background-color: #2A2A2A;
+    padding-top: 59px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        max-width: 213px;
+
+        img {
+            width: 100%;
+        }
+
+        address {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &__catalog {
+        max-width: 250px;
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        h5 {
+            font-size: 19px;
+            line-height: 22px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #000;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &__nav {
+        max-width: 140px;
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: #000;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &__delivery {
+        max-width: 180px;
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: #000;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &__info {
+        max-width: 226px;
+        text-align: right;
+    }
+
+    &__btn {
+        display: inline-block;
+        border: 1px solid #fff;
+        border-radius: 9px;
+        background: transparent;
+        padding: 15px 35px;
+        text-align: center;
+        font-size: 19px;
+        line-height: 22px;
+        color: #000;
+        font-weight: 700;
+        margin-bottom: 26px;
+        transition: all 500ms ease;
+
+        &:hover {
+            background: #fff;
+        }
+    }
+
+    &__phone {
+        display: block;
+        color: #000;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+
+    &__email {
+        display: block;
+        color: #000;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,97 @@
+.blog {
+
+    &__solocontent {
+        width: 1111px;
+        height: 448px;
+        background: url('./../../assets/calculator.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        border-radius: 9px;
+        margin: 23px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        transition: all 500ms ease;
+
+        p {
+            color: #fff;
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        h6 {
+            color: rgb(81, 76, 228);
+            font-size: 19px;
+            line-height: 22px;
+            margin-bottom: 9px;
+        }
+
+        &:hover {
+            box-shadow: 10px 10px #2A2A2A;
+        }
+    }
+
+    &__duocontent {
+        display: flex;
+        gap: 22px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 544px;
+        height: 350px;
+        background: #333;
+        border-radius: 9px;
+        background: url('./../../assets/calculator.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        transition: all 500ms ease;
+
+        p {
+            color: #fff;
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        h6 {
+            color: rgb(81, 76, 228);
+            font-size: 19px;
+            line-height: 22px;
+            margin-bottom: 9px;
+        }
+
+        &:hover {
+            box-shadow: 7px 7px #2A2A2A;
+        }
+    }
+
+    &__content {
+        background: rgba($color: #2A2A2A, $alpha: .7);
+        border-radius: 0 0 9px 9px;
+        height: 100px;
+        padding-top: 20px;
+        padding-left: 24px;
+    }
+
+    &__btn {
+        display: block;
+        border-radius: 9px;
+        color: #fff;
+        font-size: 23px;
+        line-height: 70px;
+        height: 70px;
+        width: 300px;
+        background: rgb(29, 36, 250);
+        margin: 30px auto 0;
+        text-align: center;
+        transition: all 300ms ease-out;
+
+        &:hover {
+            box-shadow: 10px 10px #000;
+        }
+    }
+}

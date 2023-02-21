@@ -1,0 +1,21 @@
+.productpage {
+    &__title {
+        font-size: 40px;
+        line-height: 46px;
+        margin-top: 50px;
+    }
+
+    &__inner {
+        margin-top: 50px;
+        display: flex;
+    }
+
+    &__photo {
+        width: 570px;
+        background-color: #fff;
+
+        & img {
+            margin: 0 auto;
+        }
+    }
+}

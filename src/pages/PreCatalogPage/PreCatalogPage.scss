@@ -1,0 +1,43 @@
+.precatalog {
+    &__inner {
+        margin-top: 30px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__cards {
+        display: grid;
+        text-align: center;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 400px 400px;
+    }
+
+    &__card {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-radius: 9px;
+        background: url(../../assets/calculator.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -80px 0;
+        transition: all 500ms ease;
+        overflow: hidden;
+    }
+
+    &__card:hover {
+        transform: scale(1.1);
+        box-shadow: 10px 10px 10px 1px rgb(44, 67, 124);
+    }
+
+    &__content {
+        background: rgba(36, 35, 35, 0.75);
+        color: #fff;
+        height: 70px;
+        border-radius: 0 0 9px 9px;
+    }
+}

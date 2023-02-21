@@ -1,0 +1,198 @@
+.maincontacts {
+    &__inner {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__contacts {
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        margin-bottom: 24px;
+    }
+
+    &__phone {
+        padding-left: 50px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 23px;
+        position: relative;
+
+        span {
+            font-size: 19px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: url(../../assets/carbon_phone-voice.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            left: 0;
+        }
+    }
+
+    &__email {
+        padding-left: 50px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 23px;
+        position: relative;
+
+        span {
+            font-size: 19px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: url(../../assets/letter.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            left: 0;
+        }
+    }
+
+    &__address {
+        padding-left: 50px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 23px;
+        position: relative;
+
+        span {
+            font-size: 19px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: url(../../assets/map-marker.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            left: 0;
+        }
+    }
+
+    &__worktime {
+        padding-left: 50px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20px;
+        position: relative;
+
+        span {
+            font-size: 19px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: url(../../assets/bi_clock.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            left: 0;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 445px;
+
+        &-title {
+            margin-bottom: 21px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 7px;
+        }
+
+        input {
+            margin-bottom: 14px;
+            border-radius: 9px;
+            border: 1px solid rgba(42, 42, 42, 0.33);
+            padding: 13px 0 13px 19px;
+
+            &::placeholder {
+                font-size: 15px;
+                line-height: 18px;
+                color: rgba(42, 42, 42, 0.33);
+                ;
+            }
+        }
+
+        textarea {
+            display: block;
+            margin-bottom: 14px;
+            border-radius: 9px;
+            border: 1px solid rgba(42, 42, 42, 0.33);
+            padding: 13px 0 13px 19px;
+
+            &::placeholder {
+                font-size: 15px;
+                line-height: 18px;
+                color: rgba(42, 42, 42, 0.33);
+                ;
+            }
+        }
+
+        button {
+            background: #3B75B6;
+            border: none;
+            width: 100%;
+            border-radius: 9px;
+            padding: 12px 48px;
+            color: #fff;
+            font-size: 19px;
+            line-height: 22px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+
+    &-name,
+    &-phone,
+    &-text {
+        width: 445px;
+    }
+
+    &-text {
+        height: 88px;
+    }
+
+    &__right {
+        border-radius: 9px;
+        overflow: hidden;
+    }
+}
